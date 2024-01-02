@@ -832,23 +832,3 @@ document.addEventListener('keyup', (event) => {
     }
 });
 
-// Event listeners for walk buttons
-moveLeftButton.addEventListener('mousedown', () => {
-    handleMove('left');
-    moveInterval = setInterval(() => handleMove('left'), 100);
-});
-
-moveRightButton.addEventListener('mousedown', () => {
-    handleMove('right');
-    moveInterval = setInterval(() => handleMove('right'), 100);
-});
-
-moveLeftButton.addEventListener('mouseup', () => {
-    clearInterval(moveInterval);
-    stopMoving();
-});
-
-moveRightButton.addEventListener('mouseup', () => {
-    clearInterval(moveInterval);
-    stopMoving();
-});
